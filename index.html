@@ -1,43 +1,108 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="icon" type="image/png" sizes="16x16" href="img/logo.jpg">
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <title>beChill.net</title>
-    </head>
-    <body>
-        <div id="root">
-            <header class="header-menu">
-                <img src="img/logo.jpg" width="100" height="100">
-                <nav class="nav-menu">
-                </nav>
-                <form method="POST" action="login.php">
-                    <input type="text" name="email" class="email" placeholder="Email Address">
-                    <input type="text" name="password" class="password" placeholder="Password">
-                    <button class="submit">Connect</button>
-                    <a href="forgot.php" class="forgot">Forgot ?</a>
-                </form>
-            </header>
-            <div class="wrapper">
-                <div class="style">
-                    <p>Music Styles</p>
-                    <a href="#">📚 Study</a>
-                </div>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/beChill-logo-no-text.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>beChill.net</title>
 
-                <div class="last-upload">
-                    <p>Latest Upload</p>
-                    <a href="#">🎶 Chill Drive - Lofi hip hop mix - Stress Relief, Relaxing Music 🎶</a>
-                </div>
+</head>
+<body>
+    <div id="login">
+        <div class="close-btn-login"><a href="#"><img src="assets/img/cross-close-sign-.svg" alt="close"></a></div>
+        <div class="form">
+            <h2>Login</h2>
+            <div class="form-element">
+                <label for="email">Email :</label>
+                <input type="text" id="Email" placeholder="Enter your email adress">
             </div>
-            <footer>
-                <div>
-                    <a href="https://twitter.com/BechillNet" title="Twitter" target="_blank"><img src="img/twitter.svg" class="icon" width="24px" height="24px"></a>
-                    <a href="https://github.com/skulussa/beChill-project" title="Github" target="_blank"><img src="img/github.png" class="icon" width="24px" height="24px"></a>
-                    <a href="https://www.facebook.com/BeChillnet-100231072435099" title="Facebook" target="_blank"><img src="img/facebook.png" class="facebook" width="24px" height="24px"></a>
-                </div>
-            </footer>
+            <div class="form-element">
+                <label for="password">Password :</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+                <button>Login</button>
+            </div>
+            <div class="form-element">
+                <a href="#">Forgot password ?</a>
+            </div>
         </div>
-    </body>
+    </div>
+
+    <div id="register">
+        <div class="close-btn-register"><a href="#"><img src="assets/img/cross-close-sign-.svg" alt="close"></a></div>
+        <div class="form">
+            <h2>Register</h2>
+            <div class="form-element">
+                <label for="username">Username :</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-element">
+                <label for="email">Email :</label>
+                <input type="text" id="email" placeholder="Enter your email adress">
+            </div>
+            <div class="form-element">
+                <label for="password">Password :</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="form-element">
+                <label for="password">Confirm password :</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="tos">
+                <label for="tos">Accept the terms of service</label>
+            </div>
+            <div class="form-element">
+                <button>Register</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="black-background"></div>
+
+    <header id="menu">
+        <ul>
+            <li><a href="#"><img src="assets/img/beChill-logo-no-background.png" alt=""></a></li>
+            <li id="menu-right">
+                <button id="show-register">Join now !</a>
+                <button id="show-login">Connect</button>
+            </li>
+        </ul>
+    </header>
+
+    <script type="text/javascript" src="assets/js/login.js"></script>
+    <section id="home">
+        <section id="style">
+            
+            <h2>Music styles</h2>
+            <ul>
+                <li><a href="#">📚 Study</a></li>
+            </ul>
+        </section>
+    
+        <section id="last-upload">
+            <h2>Latest Upload</h2>
+            <ul>
+                <li><a href="#">🎶 Chill Drive - Lofi hip hop mix - Stress Relief, Relaxing Music 🎶</a></li>
+            </ul>
+        </section>
+    </section>
+
+    <footer>
+        <a href="https://twitter.com/BechillNet" title="Twitter" target="_blank"><img src="assets/img/twitter.svg" class="icon" width="24px" height="24px"></a>
+        <a href="https://github.com/skulussa/beChill-project" title="Github" target="_blank"><img src="assets/img/github.svg" class="icon" width="24px" height="24px"></a>
+        <a href="https://www.facebook.com/BeChillnet-100231072435099" title="Facebook" target="_blank"><img src="assets/img/facebook.svg" class="facebook" width="24px" height="24px"></a>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,265 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+}
+
+#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    width: 550px;
+    height: 450px;
+    padding: 20px 50px;
+    display: none;
+    z-index: 2;
+}
+
+#register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+    width: 550px;
+    height: 600px;
+    padding: 20px 50px;
+    display: none;
+    z-index: 2;
+}
+
+#login .close-btn-login img, #register .close-btn-register img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+#login .form h2, #register .form h2{
+    text-align: center;
+    color: #000;
+    padding-top: 20px;
+    margin: 10px 0 20px;
+    font-size: 2em;
+
+}
+
+#login .form .form-element, #register .form .form-element {
+    margin: 15px 0;
+}
+
+#login .form .form-element label, #register .form .form-element label {
+    font-size: 1.5em;
+    color: #222;
+}
+
+#login .form .form-element input[type="text"],
+#login .form .form-element input[type="password"], #register .form .form-element input[type="text"],
+#register .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 10px 0 10px 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+ #login .form .form-element input[type="checkbox"], #register  .form .form-element input[type="checkbox"] {
+     margin-right: 5px;
+     transform: scale(1.3);
+ }
+
+#login .form .form-element button, #register .form .form-element button {
+    width: 100%;
+    height: 50px;
+    border: 3px solid #1649FF;
+    border-radius: 15px;
+    outline: none;
+    font-size: 1.3em;
+    background-color: #fff;
+}
+
+#login .form .form-element button:hover, #register .form .form-element button:hover{
+    background-color: #1649FF;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+#login .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 1.2em;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#login .form .form-element a:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    top: 0;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-size: 1.1em;
+}
+
+#menu img {
+    max-width: 115px;
+    max-height: 115px;
+    margin-left: 350px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu-right {
+    padding-top: 15px;
+    margin-right: 100px;
+}
+
+#menu-right a:hover {
+    color: #1649FF;
+}
+
+#menu input[type="text"]{
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+#menu input {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgb(0, 0, 0);
+    margin-left: 5px;
+}
+
+#show-register {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 3px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    transition-duration: 0.3s;
+    font-size: 1em;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+#show-register:hover {
+    background-color: #222;
+    border: 3px solid #1649FF;
+    color: #fff;
+}
+
+#show-login {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: black;
+    border: 3px solid #1649FF;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.3s;
+    font-size: 1em;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+#show-login:hover {
+    background-color: #1649FF;
+    color: black;
+}
+
+#forgot {
+    font-size: 0.5em;
+}
+
+.black-background {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: rgb(10, 10, 10);
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 250px;
+}
+
+#home a {    
+    text-decoration: none;
+}
+#home ul {    
+    text-decoration: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#style {
+    margin-left: 20%;
+}
+
+#last-upload {
+    margin-right: 20%;
+}
+
+footer {
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: #fff;
+}
+
+footer img {
+    margin: 20px 5px 0 5px;
+    margin-top: 20px;
+    filter: brightness(0) invert(1);
+}
