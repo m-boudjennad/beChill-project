@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+}
+
+#menu {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+    top: 0;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-left: 0;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    font-size: 1.1em;
+}
+
+#menu img {
+    max-width: 115px;
+    max-height: 115px;
+    margin-left: 350px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu-right {
+    padding-top: 15px;
+    margin-right: 100px;
+}
+
+#register {
+    font-size: 1.2em;
+}
+
+#menu-right a:hover {
+    color: #23B5B5;
+}
+
+#menu input[type="text"]{
+    font-size: 0.8em;
+    padding-left: 10px;
+}
+
+#menu input {
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgb(0, 0, 0);
+    margin-left: 5px;
+}
+
+.submit {
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: black;
+    border: 3px solid #23B5B5;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transition-duration: 0.3s;
+    font-size: 1em;
+    margin: 0 5px 0 5px;
+}
+
+.submit:hover {
+    background-color: #23B5B5;
+    color: black;
+}
+
+#forgot {
+    font-size: 0.5em;
+}
+
+#home {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 250px;
+}
+
+#home a {    
+    text-decoration: none;
+}
+#home ul {    
+    text-decoration: none;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#style {
+    margin-left: 20%;
+}
+
+#last-upload {
+    margin-right: 20%;
+}
+
+footer {
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    color: #fff;
+}
+
+footer img {
+    margin: 20px 5px 0 5px;
+    margin-top: 20px;
+    filter: brightness(0) invert(1);
+}
